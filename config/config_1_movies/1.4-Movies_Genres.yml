@@ -1279,6 +1279,16 @@ collections:
       any:
         audio_language: ja
 
+  Romania:
+    template: { name: Genre Other }
+    file_poster: config/posters/Romania.png
+    # visible_shared: range(07/10-07/25)
+    summary: Some of the best movies made in Romania.
+    trakt_list: https://trakt.tv/users/methera/lists/romanian-movies?sort=rank,asc
+    plex_search:
+      any:
+        country: romania
+
   South Korea:
     template: { name: Genre Other }
     file_poster: config/posters/South Korea.png
