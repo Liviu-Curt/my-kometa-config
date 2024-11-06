@@ -1,0 +1,48 @@
+templates:
+  Actor:
+    plex_search:
+      all:
+        actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+
+collections:
+  Recent Comedy:
+    plex_search:
+      all:
+        genre: Comedy
+        year.gte: 2012
+      limit: 20
+
+  1080p Documentaries:
+    plex_search:
+      all:
+        genre: Comedy
+    summary: A collection of 1080p Documentaries
+    filters:
+      resolution: 1080
+
+  Quentin Tarantino:
+    plex_search:
+      any:
+        actor: tmdb
+        director: tmdb
+        producer: tmdb
+        writer: tmdb
+    tmdb_person: 138
+    sync_mode: sync # default is append, it will only add new, sync will remove and add all
+
+  Daniel Craig only James Bonds:
+    imdb_list:
+      list_id: ls006405458
+    filters:
+      actor: Daniel Craig
+
+  # Robert Downey:
+  #   template: {name: Actor, person: 3223}
+  #   style: rainier
+
+# overlays:
+#   - default: resolution
