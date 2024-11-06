@@ -1,0 +1,19 @@
+# Adds the Romanian Audio overlay to all qualified movies
+templates:
+  Romanian Audio:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      file_poster: config/overlays/Romanian-Audio.png
+
+overlays:
+  No-Swedish-Subtitles:
+    template:
+      - name: Romanian Audio
+    plex_search:
+      all:
+        audio_language: ro
