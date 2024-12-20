@@ -6,29 +6,29 @@
 
 libraries:
   ## MOVIES ##
-  MoviesTest:
+  Movies:
     collection_files:
-      # - file: config/config_1_movies/1.1-Movies_General.yml
-      # - file: config/config_1_movies/1.2-Movies_Awards.yml
-      # - file: config/config_1_movies/1.3-Movies_Franchises.yml
-      # - file: config/config_1_movies/1.4-Movies_Genres.yml
-      # - file: config/config_1_movies/1.5-Movies_Holidays
-      # - file: config/config_1_movies/1.6-Movies_People.yml
-      # - file: config/config_1_movies/1.7-Movies_Specials.yml
-      # - file: config/config_1_movies/1.8-Movies_Studios.yml
-      # - file: config/config_1_movies/1.9-Movies_Years.yml
-      # - file: config/config_1_movies/1.10-Movies_Separators.yml
+      - file: config/config_1_movies/1.1-Movies_General.yml
+      - file: config/config_1_movies/1.2-Movies_Awards.yml
+      - file: config/config_1_movies/1.3-Movies_Franchises.yml
+      - file: config/config_1_movies/1.4-Movies_Genres.yml
+      - file: config/config_1_movies/1.5-Movies_Holidays
+      - file: config/config_1_movies/1.6-Movies_People.yml
+      - file: config/config_1_movies/1.7-Movies_Specials.yml
+      - file: config/config_1_movies/1.8-Movies_Studios.yml
+      - file: config/config_1_movies/1.9-Movies_Years.yml
+      - file: config/config_1_movies/1.10-Movies_Separators.yml
     operations:
-      mass_audience_rating_update: imdb
+      mass_audience_rating_update: imdb # Updates every item's audience/critic/user rating in the library to the chosen site's rating
       delete_collections:
-        configured: false
-        managed: true
-    # remove_overlays: false           # Set this to true to remove all overlays
+        configured: false # Collection must be Configured to be deleted (collection is in the config file of the specific Kometa run)
+        managed: true # Collection must be Managed to be deleted (collection has the Kometa label)
+    remove_overlays: false # Set this to true to remove all overlays
     overlay_files:
-      # - file: config/config_1_movies/overlays/1.1-Movies_Overlays_4K.yml
-      # - file: config/config_1_movies/overlays/1.2-Movies_Overlays_Rating.yml
-      # - file: config/config_1_movies/overlays/1.3-Movies_Overlays_Audio.yml
-      # - file: config/config_1_movies/overlays/1.4-Movies_Overlays_Top.yml
+      - file: config/config_1_movies/overlays/1.1-Movies_Overlays_4K.yml
+      - file: config/config_1_movies/overlays/1.2-Movies_Overlays_Rating.yml
+      - file: config/config_1_movies/overlays/1.3-Movies_Overlays_Audio.yml
+      - file: config/config_1_movies/overlays/1.4-Movies_Overlays_Top.yml
 
   ## TV SHOWS ##
   # TV Shows:
@@ -42,13 +42,17 @@ libraries:
   #     - file: config/config_2_tv-shows/2.7-TV-Shows_Years.yml
   #     - file: config/config_2_tv-shows/2.8-TV-Shows_Separators.yml
   #   operations:
-  #     mass_audience_rating_update: imdb
+  #     mass_audience_rating_update: imdb # Updates every item's audience/critic/user rating in the library to the chosen site's rating
+  #     delete_collections:
+  #       configured: false # Collection must be Configured to be deleted (collection is in the config file of the specific Kometa run)
+  #       managed: true # Collection must be Managed to be deleted (collection has the Kometa label)
+  #   remove_overlays: false # Set this to true to remove all overlays  
   #   overlay_files:
   #     - file: config/config_2_tv-shows/overlays/2.1-TV-Shows_Overlays_4K.yml
   #     - file: config/config_2_tv-shows/overlays/2.2-TV-Shows_Overlays_Rating.yml
   #     - file: config/config_2_tv-shows/overlays/2.3-TV-Shows_Overlays_Audio.yml
   #     - file: config/config_2_tv-shows/overlays/2.4-TV-Shows_Overlays_Top.yml
-  #     - file: config/config_2_tv-shows/overlays/2.5-TV-Shows_Overlays_Canceled.yml
+  # #     - file: config/config_2_tv-shows/overlays/2.5-TV-Shows_Overlays_Canceled.yml
 
 
 # SETTINGS
@@ -164,8 +168,8 @@ trakt:
     scope: public
 # MAL - My Anime List
 mal:
-  client_id: ####################
-  client_secret: ####################
+  client_id: 
+  client_secret: 
   authorization:
     # everything below is autofilled by the script
     access_token:

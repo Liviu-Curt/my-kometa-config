@@ -1,0 +1,86 @@
+############################################
+#            GENRES and FRANCHISE          #
+############################################
+
+templates:
+  Genre:
+    sort_title: +01_<<collection_name>>
+    sync_mode: sync
+    visible_library: true
+    collection_mode: hide
+
+  Franchise:
+    collection_order: release.desc
+    sync_mode: sync
+    sort_title: zzzzzzz_<<collection_name>>
+    collection_mode: hide
+
+# Creates collections for genres with a limit of 200
+collections:
+  Documentary:
+    template: { name: Genre }
+    summary: Some of the most impactful and critically acclaimed documentaries ever filmed.
+    file_poster: config/posters/Documentary TV.png
+    visible_shared: weekly(wednesday)
+    smart_filter:
+      sort_by: random
+      limit: 200
+      validate: false
+      all:
+        audience_rating.gte: 6.0
+        genre: documentary
+
+  History:
+    template: { name: Genre }
+    visible_shared: weekly(friday)
+    file_poster: config/posters/History TV.png
+    summary: History is a genre that takes historical events and people and interprets them in a larger scale. Historical accuracy is not the main focus, but rather the telling of a grandiose story. The drama of an History film is often accentuated by a sweeping musical score, lavish costumes, and high production value.
+    smart_filter:
+      sort_by: random
+      limit: 200
+      validate: false
+      all:
+        audience_rating.gte: 6.0
+        genre: history
+
+  Mystery:
+    template: { name: Genre }
+    visible_shared: weekly(saturday)
+    file_poster: config/posters/Mystery TV.png
+    summary: A Mystery centers on a person of authority, usually a detective, that is trying to solve a mysterious crime. The main protagonist uses clues, investigation, and logical reasoning. The biggest element in these films is a sense of “whodunit” suspense, usually created through visual cues and unusual plot twists.
+    smart_filter:
+      sort_by: random
+      limit: 200
+      validate: false
+      all:
+        audience_rating.gte: 6.0
+        genre: mystery
+
+  War:
+    template: { name: Genre }
+    visible_shared: weekly(friday)
+    file_poster: config/posters/War TV.png
+    summary: War is a genre that looks at the reality of war on a grand scale. They often focus on landmark battles as well as political issues within war. This genre usually focuses on a main character and his team of support, giving the audience an inside look into the gritty reality of war.
+    smart_filter:
+      sort_by: random
+      limit: 200
+      validate: false
+      all:
+        audience_rating.gte: 6.0
+        genre:
+          - war
+          - war & politics
+
+######################################################
+#                  FRANCHISES 8.0                    #
+######################################################
+  Planet:
+    template: { name: Franchise }
+    summary: BBC Planet is a series of natural history television programs produced by the British Broadcasting Corporation. Each show explores different aspects of the natural world and features stunning cinematography and in depth scientific explanations.
+    file_poster: config/posters/Planet.png
+    plex_search:
+      validate: false
+      all:
+        title: planet
+        title.not: sheen
+        genre.not: animation

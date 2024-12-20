@@ -8,7 +8,7 @@ templates:
     sync_mode: sync
     plex_search:
       all:
-        title: parasite
+        title: vanilla sky
 
 # Creates a separator to make it more clear where a category of collection starts and ends
 collections:

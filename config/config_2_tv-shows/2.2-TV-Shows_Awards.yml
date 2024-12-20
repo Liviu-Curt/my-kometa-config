@@ -10,6 +10,7 @@ templates:
     sync_mode: sync
     smart_label: release.desc
     visible_library: true
+    collection_mode: hide
     delete_not_scheduled: false
     trakt_list:
       - <<trakt_list>>
@@ -25,6 +26,7 @@ templates:
     sync_mode: sync
     smart_label: release.desc
     delete_not_scheduled: false
+    collection_mode: hide
     letterboxd_list:
       url: https://letterboxd.com/<<user>>/list/<<list>>/by/<<sort>>
       limit: 9999
@@ -36,6 +38,7 @@ templates:
     sync_mode: sync
     smart_label: release.desc
     delete_not_scheduled: false
+    collection_mode: hide
     imdb_list:
       url: https://www.imdb.com/list/<<imdb_list>>/?sort=release_date,desc
       limit: 9999

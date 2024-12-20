@@ -7,6 +7,7 @@ templates:
     sync_mode: sync
     sort_title: zzz_<<collection_name>>
     summary: Best movies of the decade with a minimum of 7.0 IMDb Rating.
+    collection_mode: hide
     visible_library: true
 
   Year:
@@ -14,6 +15,7 @@ templates:
     sync_mode: sync
     sort_title: zzzz_<<collection_name>>
     summary: Best movies of the year with a minimum of 7.0 IMDb Rating.
+    collection_mode: hide
     visible_library: false
 
 # Movies with a IMDb rating greater than 7.0 from a decade
@@ -21,6 +23,7 @@ collections:
   Best of 1920s:
     template: { name: Decade }
     plex_search:
+      # validate: false
       all:
         year.gt: 1919
         year.lt: 1930

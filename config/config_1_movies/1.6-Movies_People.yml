@@ -635,7 +635,7 @@ collections:
         
   Leslie Nielsen:
     template: { name: Actor }
-    file_poster: config/posters/Leslie Nielsen.jpg
+    file_poster: config/posters/Leslie Nielsen.png
     visible_shared:
       - monthly(21)
       - monthly(25)

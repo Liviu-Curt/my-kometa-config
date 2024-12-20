@@ -7,21 +7,25 @@ templates:
     sync_mode: sync
     sort_title: +++_<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
   Movie Basic:
     sync_mode: sync
     sort_title: +++_<<collection_name>>
     visible_library: true
+    # collection_mode: hide
 
   Movie Release:
     smart_label: release.desc
     sync_mode: sync
     sort_title: +++_<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
   Movie Top:
     sync_mode: sync
     visible_library: true
+    # collection_mode: hide
 
 collections:
   IMDb - Best Recent: # IMDb specific chart lists
@@ -79,24 +83,24 @@ collections:
     file_poster: config/posters/Letterboxd Top 250 Gold.png
     trakt_list: https://trakt.tv/users/abdulwahabaa/lists/letterboxd-top-250?sort=rank,asc
 
-  MAL - Most Favorited: # MyAnimeList specific chart lists
-    template: { name: Movie }
-    mal_favorite: 500
-    summary: Most favorited animes on MyAnimeList.
-    file_poster: config/posters/MAL Most Favorited.png
+  # MAL - Most Favorited: # MyAnimeList specific chart lists
+  #   template: { name: Movie }
+  #   mal_favorite: 500
+  #   summary: Most favorited animes on MyAnimeList.
+  #   file_poster: config/posters/MAL Most Favorited.png
 
-  MAL - Popular:
-    template: { name: Movie }
-    mal_popular: 500
-    summary: Anime movies popular this season according to MyAnimeList and Anilist.
-    file_poster: config/posters/MAL Popular.png
+  # MAL - Popular:
+  #   template: { name: Movie }
+  #   mal_popular: 500
+  #   summary: Anime movies popular this season according to MyAnimeList and Anilist.
+  #   file_poster: config/posters/MAL Popular.png
 
-  MAL - Top Rated:
-    template: { name: Movie }
-    mal_movie: 500
-    visible_shared: monthly(18)
-    summary: The highest rated anime movies ever according to MyAnimeList.
-    file_poster: config/posters/MAL Top Rated Gold.png
+  # MAL - Top Rated:
+  #   template: { name: Movie }
+  #   mal_movie: 500
+  #   visible_shared: monthly(18)
+  #   summary: The highest rated anime movies ever according to MyAnimeList.
+  #   file_poster: config/posters/MAL Top Rated Gold.png
 
   Metacritic - Must-See:
     template: { name: Movie }

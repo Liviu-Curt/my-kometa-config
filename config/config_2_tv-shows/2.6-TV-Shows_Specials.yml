@@ -6,28 +6,33 @@ templates:
   Rating:
     collection_order: custom
     sync_mode: sync
+    collection_mode: hide
 
   Special:
     smart_label: random
     sync_mode: sync
     sort_title: zz__<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
   Special Plus:
     smart_label: random
     sync_mode: sync
     sort_title: zz__<<collection_name>>
     visible_library: false
+    collection_mode: hide
 
   Special Smart:
     sync_mode: sync
     sort_title: zz__<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
   Special Smart Other:
     sync_mode: sync
     sort_title: zz__<<collection_name>>
     visible_library: false
+    collection_mode: hide
 
 collections:
   18+: # TV shows with an adult rating
@@ -116,7 +121,7 @@ collections:
     summary: The lengthiest shows on Plex.
     file_poster: config/posters/Longest.png
     trakt_list:
-      - https://trakt.tv/users/belamarlua/lists/long-shows-i-watched-more-then-one-time?sort=rank,asc
+      - https://trakt.tv/users/andrewh4352/lists/top-shows-long-running?sort=rank,asc
       - https://trakt.tv/users/copeland1994/lists/all-time-series-rankings-long-running-shows-only?sort=rank,asc
 
   Newly Released: # Released within last 2 months

@@ -11,6 +11,7 @@ templates:
     smart_label: release.desc
     delete_not_scheduled: false
     visible_library: true
+    collection_mode: hide
     trakt_list:
       - <<trakt_list>>
 
@@ -18,12 +19,14 @@ templates:
     smart_label: release.desc
     sync_mode: sync
     sort_title: zz_<<collection_name>>
+    collection_mode: hide
 
   Award Other:
     smart_label: release.desc
     sync_mode: sync
     sort_title: zz_<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
 # Movies who has won some the most prestigious awards
 collections:

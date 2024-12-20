@@ -7,6 +7,7 @@ templates:
     collection_order: release.desc
     sync_mode: sync
     sort_title: zzzzzzz_<<collection_name>>
+    collection_mode: hide
 
 # Creates collections for TV shows in the same series with 3 or more.
 collections:
@@ -16,6 +17,7 @@ collections:
     file_poster: config/posters/Avatar Universe.png
     trakt_list: https://trakt.tv/users/abhikbhatia/lists/avatar-studios?sort=released,desc
     plex_search:
+      validate: false
       any:
         title:
           - avatar
@@ -26,6 +28,7 @@ collections:
     summary: A criminal anthology series is a TV show where each episode is a self-contained story with a unique plot and characters by Netflix.
     file_poster: config/posters/Criminal.png
     plex_search:
+      validate: false
       all:
         title: criminal
 
@@ -34,6 +37,7 @@ collections:
     summary: The CSI (Crime Scene Investigation) TV franchise is a highly successful and influential series of crime procedural dramas that has captivated audiences worldwide. It was created by Anthony E. Zuiker and originally premiered in 2000.
     file_poster: config/posters/CSI.png
     plex_search:
+      validate: false
       all:
         title: CSI
 
@@ -45,6 +49,7 @@ collections:
       - https://trakt.tv/users/caspian024/lists/dc-tv?sort=released,asc
       - https://trakt.tv/users/asif79/lists/dc-tv?sort=rank,asc
     plex_search:
+      validate: false
       any:
         title:
           - fantastic four
@@ -68,22 +73,24 @@ collections:
       - https://trakt.tv/users/abhikbhatia/lists/world-of-ice-and-fire-collection?sort=rank,asc
       - https://trakt.tv/users/mptpro/lists/game-of-thrones?sort=rank,asc
     plex_search:
+      validate: false
       any:
         title:
           - game of thrones
           - house of the dragon
           - the hedge knight
 
-  He-Man and She-Ra:
-    template: { name: Franchise }
-    summary: He-Man is the alter ego of Prince Adam and also the twin brother of She-Ra. He-Man and his friends defend Eternia and the secrets of Castle Grayskull from the evil forces of Skeletor.
-    file_poster: config/posters/He-Man and She-Ra.png
-    plex_search:
-      any:
-        title:
-          - he-man
-          - she-ra
-          - masters of the universe
+  # He-Man and She-Ra:
+  #   template: { name: Franchise }
+  #   summary: He-Man is the alter ego of Prince Adam and also the twin brother of She-Ra. He-Man and his friends defend Eternia and the secrets of Castle Grayskull from the evil forces of Skeletor.
+  #   file_poster: config/posters/He-Man and She-Ra.png
+  #   plex_search:
+  #     validate: false
+  #     any:
+  #       title:
+  #         - he-man
+  #         - she-ra
+  #         - masters of the universe
 
   Marvel Television:
     template: { name: Franchise }
@@ -94,6 +101,7 @@ collections:
       - https://trakt.tv/users/caspian024/lists/marvel-tv?sort=released,asc
       - https://trakt.tv/users/asif79/lists/marvel-tv?sort=rank,asc
     plex_search:
+      validate: false
       any:
         studio: Marvel
         title:
@@ -112,6 +120,7 @@ collections:
     file_poster: config/posters/Marvel Cinematic Universe.png
     trakt_list: https://trakt.tv/users/neohexane/lists/mcu-tv?sort=released,asc
     plex_search:
+      validate: false
       all:
         studio: Marvel Studios
         title.not:
@@ -124,6 +133,7 @@ collections:
     summary: Money Heist, also known as La Casa de Papel, is a Spanish television crime drama series. The show follows a group of criminals, led by a mastermind known as "The Professor," who plan and execute the biggest heist in history robbing the Royal Mint of Spain.
     file_poster: config/posters/Money Heist.png
     plex_search:
+      validate: false
       any:
         title:
           - money heist
@@ -134,34 +144,27 @@ collections:
     summary: The NCIS (Naval Criminal Investigative Service) TV franchise is a highly successful and enduring series of crime procedural dramas that focus on the investigations conducted by the fictional NCIS agency, which is responsible for solving crimes involving members of the United States Navy and Marine Corps.
     file_poster: config/posters/NCIS.png
     plex_search:
+      validate: false
       all:
         title: NCIS
 
-  Peanuts:
-    template: { name: Franchise }
-    summary: Charlie Brown is the central protagonist of the long-running comic strip Peanuts, syndicated in daily and Sunday newspapers in numerous countries all over the world.
-    file_poster: config/posters/Peanuts.png
-    plex_search:
-      any:
-        title:
-          - charlie brown
-          - snoopy
-
-  Planet:
-    template: { name: Franchise }
-    summary: BBC Planet is a series of natural history television programs produced by the British Broadcasting Corporation. Each show explores different aspects of the natural world and features stunning cinematography and in depth scientific explanations.
-    file_poster: config/posters/Planet.png
-    plex_search:
-      all:
-        title: planet
-        title.not: sheen
-        genre.not: animation
+  # Peanuts:
+  #   template: { name: Franchise }
+  #   summary: Charlie Brown is the central protagonist of the long-running comic strip Peanuts, syndicated in daily and Sunday newspapers in numerous countries all over the world.
+  #   file_poster: config/posters/Peanuts.png
+  #   plex_search:
+  #     validate: false
+  #     any:
+  #       title:
+  #         - charlie brown
+  #         - snoopy
 
   Power Universe:
     template: { name: Franchise }
     summary: Power is an American crime drama television series that follows James St. Patrick, also known as "Ghost," a wealthy nightclub owner who leads a double life as a drug kingpin in New York City. The series explores themes of loyalty, family, power, and corruption.
     file_poster: config/posters/Power Universe.png
     plex_search:
+      validate: false
       all:
         title: power
         genre: crime
@@ -172,6 +175,7 @@ collections:
     summary: Scooby-Doo is an American animated media franchise comprising many animated television series produced from 1969 to the present, as well as their derivative media.
     file_poster: config/posters/Scooby-Doo! TV.png
     plex_search:
+      validate: false
       any:
         title:
           - scooby-doo
@@ -182,6 +186,7 @@ collections:
     summary: Sonic the Hedgehog is a Japanese video game series and media franchise created by Sega. The franchise follows Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist.
     file_poster: config/posters/Sonic TV.png
     plex_search:
+      validate: false
       all:
         title: sonic
 
@@ -190,6 +195,7 @@ collections:
     summary: Stargate is a military science fiction media franchise based on the film directed by Roland Emmerich, which he co-wrote with producer Dean Devlin. The franchise is based on the idea of an alien Einstein–Rosen bridge device (the Stargate) that enables nearly instantaneous travel across the cosmos.
     file_poster: config/posters/Stargate.png
     plex_search:
+      validate: false
       all:
         title: stargate
 
@@ -198,6 +204,7 @@ collections:
     summary: Star Trek is an American science fiction media franchise created by Gene Roddenberry, which began with the eponymous 1960s television series and quickly became a worldwide pop-culture phenomenon.
     file_poster: config/posters/Star Trek TV.png
     plex_search:
+      validate: false
       all:
         title: star trek
 
@@ -207,6 +214,7 @@ collections:
     file_poster: config/posters/Star Wars TV.png
     trakt_list: https://trakt.tv/users/arachn0id/lists/star-wars-tv-series?sort=released,desc
     plex_search:
+      validate: false
       any:
         title:
           - bad batch
@@ -217,6 +225,7 @@ collections:
     summary: Teenage Mutant Ninja Turtles, commonly abbreviated as TMNT, is a media franchise created by the comic book artists Kevin Eastman and Peter Laird. It follows Leonardo, Donatello, Raphael and Michelangelo, four anthropomorphic turtle brothers trained in ninjutsu who fight evil in New York City.
     file_poster: config/posters/Teenage Mutant Ninja Turtles TV.png
     plex_search:
+      validate: false
       all:
         title: teenage mutant ninja
 
@@ -225,6 +234,7 @@ collections:
     summary: Tom and Jerry is an American animated media franchise and series of comedy short films created in 1940 by William Hanna and Joseph Barbera. Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer, the series centers on the rivalry between the titular characters of a cat named Tom and a mouse named Jerry.
     file_poster: config/posters/Tom and Jerry TV.png
     plex_search:
+      validate: false
       all:
         title: tom jerry
 
@@ -233,6 +243,7 @@ collections:
     summary: Transformers is a media franchise produced by American toy company Hasbro and Japanese toy company Takara Tomy. It primarily follows the Autobots and the Decepticons, two alien robot factions at war that can transform into other forms, such as vehicles and animals.
     file_poster: config/posters/Transformers TV.png
     plex_search:
+      validate: false
       all:
         title: transformers
 
@@ -241,6 +252,7 @@ collections:
     summary: Vikings is a historical drama television series that follows the legendary Norse hero Ragnar Lothbrok and his family as they navigate the treacherous waters of medieval Scandinavia. The show is loosely based on the sagas and legends of Viking warriors, raiders, and explorers who lived during the Viking Age.
     file_poster: config/posters/Vikings.png
     plex_search:
+      validate: false
       all:
         title: vikings
 
@@ -249,6 +261,7 @@ collections:
     summary: The Walking Dead is a zombie apocalypse media franchise, including a comic book series, several television series, a web series, films, novels, video games, and various other media such as audio books and soundtracks. The original comic books were created by writer Robert Kirkman and artist Tony Moore, with Charlie Adlard joining shortly after its creation.
     file_poster: config/posters/The Walking Dead Universe.png
     plex_search:
+      validate: false
       all:
         title: walking dead
 
@@ -257,6 +270,7 @@ collections:
     summary: The Witcher is a dark fantasy series, originally a series of books written by Polish author Andrzej Sapkowski, which has been adapted into various media, including a popular Netflix television series. The story follows Geralt of Rivia, a skilled monster hunter known as a "Witcher", as he navigates a world filled with danger, magic, and political intrigue.
     file_poster: config/posters/The Witcher.png
     plex_search:
+      validate: false
       all:
         title: witcher
 
@@ -265,6 +279,7 @@ collections:
     summary: Yellowstone is an American neo Western drama television series created by Taylor Sheridan and John Linson that premiered on June 20, 2018, on Paramount Network.
     file_poster: config/posters/Yellowstone.png
     plex_search:
+      validate: false
       any:
         title:
           - yellowstone

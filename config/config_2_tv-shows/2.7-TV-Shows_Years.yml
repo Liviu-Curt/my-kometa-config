@@ -8,6 +8,7 @@ templates:
     sync_mode: sync
     sort_title: zzzz_<<collection_name>>
     summary: Best shows of the decade with a minimum of 7.8 IMDb Rating.
+    collection_mode: hide
     visible_library: true
 
   Year:
@@ -15,6 +16,7 @@ templates:
     sync_mode: sync
     sort_title: zzzzz_<<collection_name>>
     summary: Best shows of the year with a minimum of 7.8 IMDb Rating.
+    collection_mode: hide
     visible_library: false
 
 # TV shows with a IMDb rating greater than 7.8 from a decade
@@ -24,6 +26,7 @@ collections:
     file_poster: config/posters/Best of 1940-1970s.png
     visible_shared: range(03/01-03/31)
     plex_search:
+      validate: false
       all:
         year.gt: 1939
         year.lt: 1980
@@ -34,6 +37,7 @@ collections:
     file_poster: config/posters/Best of 1980s.png
     visible_shared: range(01/01-02/31)
     plex_search:
+      validate: false
       all:
         year.gt: 1979
         year.lt: 1990
@@ -44,6 +48,7 @@ collections:
     file_poster: config/posters/Best of 1990s.png
     visible_shared: range(07/01-08/30)
     plex_search:
+      validate: false
       all:
         year.gt: 1989
         year.lt: 2000
@@ -54,6 +59,7 @@ collections:
     file_poster: config/posters/Best of 2000s.png
     visible_shared: range(04/01-06/30)
     plex_search:
+      validate: false
       all:
         year.gt: 1999
         year.lt: 2010
@@ -64,6 +70,7 @@ collections:
     file_poster: config/posters/Best of 2010s.png
     visible_shared: range(11/01-12/31)
     plex_search:
+      validate: false
       all:
         year.gt: 2009
         year.lt: 2020
@@ -74,6 +81,7 @@ collections:
     file_poster: config/posters/Best of 2020s.png
     visible_shared: range(09/01-10/31)
     plex_search:
+      validate: false
       all:
         year.gt: 2019
         year.lt: 2030
@@ -88,6 +96,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2000.png
     plex_search:
+      validate: false
       all:
         year: 2000
         audience_rating.gte: 7.8
@@ -96,6 +105,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2001.png
     plex_search:
+      validate: false
       all:
         year: 2001
         audience_rating.gte: 7.8
@@ -104,6 +114,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2002.png
     plex_search:
+      validate: false
       all:
         year: 2002
         audience_rating.gte: 7.8
@@ -112,6 +123,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2003.png
     plex_search:
+      validate: false
       all:
         year: 2003
         audience_rating.gte: 7.8
@@ -120,6 +132,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2004.png
     plex_search:
+      validate: false
       all:
         year: 2004
         audience_rating.gte: 7.8
@@ -128,6 +141,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2005.png
     plex_search:
+      validate: false
       all:
         year: 2005
         audience_rating.gte: 7.8
@@ -136,6 +150,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2006.png
     plex_search:
+      validate: false
       all:
         year: 2006
         audience_rating.gte: 7.8
@@ -144,6 +159,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2007.png
     plex_search:
+      validate: false
       all:
         year: 2007
         audience_rating.gte: 7.8
@@ -152,6 +168,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2008.png
     plex_search:
+      validate: false
       all:
         year: 2008
         audience_rating.gte: 7.8
@@ -160,6 +177,7 @@ collections:
     template: { name: Year }
     file_poster: config/posters/Best of 2009.png
     plex_search:
+      validate: false
       all:
         year: 2009
         audience_rating.gte: 7.8
@@ -169,6 +187,7 @@ collections:
     file_poster: config/posters/Best of 2010.png
     visible_shared: range(04/16-04/30)
     plex_search:
+      validate: false
       all:
         year: 2010
         audience_rating.gte: 7.8
@@ -178,6 +197,7 @@ collections:
     file_poster: config/posters/Best of 2011.png
     visible_shared: range(10/23-10/31)
     plex_search:
+      validate: false
       all:
         year: 2011
         audience_rating.gte: 7.8
@@ -187,6 +207,7 @@ collections:
     file_poster: config/posters/Best of 2012.png
     visible_shared: range(06/01-06/15)
     plex_search:
+      validate: false
       all:
         year: 2012
         audience_rating.gte: 7.8
@@ -196,6 +217,7 @@ collections:
     file_poster: config/posters/Best of 2013.png
     visible_shared: range(12/16-12/31)
     plex_search:
+      validate: false
       all:
         year: 2013
         audience_rating.gte: 7.8
@@ -205,6 +227,7 @@ collections:
     file_poster: config/posters/Best of 2014.png
     visible_shared: range(01/01-01/15)
     plex_search:
+      validate: false
       all:
         year: 2014
         audience_rating.gte: 7.8
@@ -214,6 +237,7 @@ collections:
     file_poster: config/posters/Best of 2015.png
     visible_shared: range(06/16-06/22)
     plex_search:
+      validate: false
       all:
         year: 2015
         audience_rating.gte: 7.8
@@ -223,6 +247,7 @@ collections:
     file_poster: config/posters/Best of 2016.png
     visible_shared: range(12/01-12/15)
     plex_search:
+      validate: false
       all:
         year: 2016
         audience_rating.gte: 7.8
@@ -232,6 +257,7 @@ collections:
     file_poster: config/posters/Best of 2017.png
     visible_shared: range(10/01-10/15)
     plex_search:
+      validate: false
       all:
         year: 2017
         audience_rating.gte: 7.8
@@ -241,6 +267,7 @@ collections:
     file_poster: config/posters/Best of 2018.png
     visible_shared: range(02/16-02/28)
     plex_search:
+      validate: false
       all:
         year: 2018
         audience_rating.gte: 7.8
@@ -250,6 +277,7 @@ collections:
     file_poster: config/posters/Best of 2019.png
     visible_shared: range(08/16-08/31)
     plex_search:
+      validate: false
       all:
         year: 2019
         audience_rating.gte: 7.8
@@ -259,6 +287,7 @@ collections:
     file_poster: config/posters/Best of 2020.png
     visible_shared: range(11/16-11/30)
     plex_search:
+      validate: false
       all:
         year: 2020
         audience_rating.gte: 7.8
@@ -268,6 +297,7 @@ collections:
     file_poster: config/posters/Best of 2021.png
     visible_shared: range(09/16-09/31)
     plex_search:
+      validate: false
       all:
         year: 2021
         audience_rating.gte: 7.8
@@ -277,6 +307,7 @@ collections:
     file_poster: config/posters/Best of 2022.png
     visible_shared: range(10/16-10/22)
     plex_search:
+      validate: false
       all:
         year: 2022
         audience_rating.gte: 7.8
@@ -286,6 +317,7 @@ collections:
     file_poster: config/posters/Best of 2023.png
     visible_shared: range(03/16-03/22)
     plex_search:
+      validate: false
       all:
         year: 2023
         audience_rating.gte: 7.8
@@ -295,6 +327,7 @@ collections:
     file_poster: config/posters/Best of 2024.png
     visible_shared: range(04/16-04/22)
     plex_search:
+      validate: false
       all:
         year: 2024
         audience_rating.gte: 7.8

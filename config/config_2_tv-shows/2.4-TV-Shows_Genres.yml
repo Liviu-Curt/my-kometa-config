@@ -5,19 +5,22 @@
 templates:
   Genre:
     sort_title: +01_<<collection_name>>
-    visible_library: true
     sync_mode: sync
+    visible_library: true
+    collection_mode: hide
 
   Genre Other:
     sort_title: <<collection_name>>
     smart_label: random
-    visible_library: true
     sync_mode: sync
+    visible_library: true
+    collection_mode: hide
 
   Genre Smart:
-    visible_library: true
     sort_title: <<collection_name>>
     sync_mode: sync
+    visible_library: true
+    collection_mode: hide
 
 # Creates collections for genres with a limit of 200
 collections:
@@ -176,15 +179,15 @@ collections:
         audience_rating.gte: 6.5
         genre: horror
 
-  K-Drama:
-    template: { name: Genre }
-    smart_label: random
-    file_poster: config/posters/K-Drama TV.png
-    visible_shared: weekly(tuesday)
-    summary: All Korean shows in one place.
-    trakt_list:
-      - https://trakt.tv/users/xscaredycat/lists/korean-dramas
-      - https://trakt.tv/users/marguis/lists/korean-dramas
+  # K-Drama:
+  #   template: { name: Genre }
+  #   smart_label: random
+  #   file_poster: config/posters/K-Drama TV.png
+  #   visible_shared: weekly(tuesday)
+  #   summary: All Korean shows in one place.
+  #   trakt_list:
+  #     - https://trakt.tv/users/xscaredycat/lists/korean-dramas
+  #     - https://trakt.tv/users/marguis/lists/korean-dramas
 
   Miniseries:
     template: { name: Genre }

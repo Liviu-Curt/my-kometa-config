@@ -10,6 +10,7 @@ templates:
       any:
         network: <<network>>
     sort_title: zzzzzz_<<collection_name>>
+    collection_mode: hide
 
   streaming:
     smart_filter:
@@ -18,6 +19,7 @@ templates:
       any:
         network: <<network>>
     sort_title: ++++_<<collection_name>>
+    collection_mode: hide
 
 # Fetched from TMDb using the studio id and/or name
 collections:

@@ -434,7 +434,6 @@ collections:
     file_poster: config/posters/Cyberpunk.png
     visible_shared: monthly(5)
     trakt_list:
-      - https://trakt.tv/users/chatterer/lists/cyberpunk?sort=released,asc
       - https://trakt.tv/users/oya-kesh/lists/cyberpunk?sort=rank,asc
 
   Con-Artist:
@@ -940,9 +939,11 @@ collections:
     summary: A remake is a film, or occasionally a television series, video game, or similar form of entertainment, that is based upon and retells the story of an earlier production in the same medium—e.g., a "new version of an existing film".
     file_poster: config/posters/Remake.png
     visible_shared: monthly(25)
-    trakt_list:
-      - https://trakt.tv/users/chatterer/lists/remake?sort=released,asc
-      - https://trakt.tv/users/bob-frapples/lists/remakes?sort=rank,asc
+    letterboxd_list:
+      - https://letterboxd.com/zgrace/list/remakes/
+      - https://letterboxd.com/1lostfan/list/remakes/
+      - https://letterboxd.com/rasmusjonsson/list/remakes/
+      - https://letterboxd.com/kultgestalt/list/remakes/
 
   Robot:
     template: { name: Genre Other }
@@ -1017,7 +1018,7 @@ collections:
     visible_shared: monthly(31)
     letterboxd_list:
       - https://letterboxd.com/anniw/list/surrealism/
-      - https://letterboxd.com/ciaocabiria/list/surrealism/
+      - https://letterboxd.com/delshannononion/list/surrealism/
 
   Supernatural:
     template: { name: Genre Other }
@@ -1296,6 +1297,7 @@ collections:
     summary: Some of the best movies made in South Korea.
     trakt_list: https://trakt.tv/users/bwf2/lists/south-korean-movies-2018-2022?sort=rank,asc
     plex_search:
+      validate: true # check this also TODO
       any:
         audio_language: ko
 
@@ -1307,7 +1309,7 @@ collections:
     trakt_list: https://trakt.tv/users/a925sw/lists/swedish-movies?sort=rank,asc
     plex_search:
       any:
-        audio_language: sv
+        audio_language: Swedish # TODO test this if is sv or Swedish
 
   Spain:
     template: { name: Genre Other }

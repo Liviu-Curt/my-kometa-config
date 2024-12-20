@@ -92,15 +92,15 @@ collections:
       all:
         release: 30
 
-  No Swedish Subtitles:
-    sync_mode: sync
-    sort_title: zzzzzzzzzzz_No Swedish Subtitles
-    file_poster: config/posters/No Swedish Subtitles.png
-    summary: Movies yet to recieve swedish subtitles.
-    smart_filter:
-      sort_by: added.desc
-      all:
-        subtitle_language.not: sv
+  # No Swedish Subtitles:
+  #   sync_mode: sync
+  #   sort_title: zzzzzzzzzzz_No Swedish Subtitles
+  #   file_poster: config/posters/No Swedish Subtitles.png
+  #   summary: Movies yet to recieve swedish subtitles.
+  #   smart_filter:
+  #     sort_by: added.desc
+  #     all:
+  #       subtitle_language.not: sv
 
   Random: # Random movies with a rating above 4 from IMDb
     template: { name: Special Smart }

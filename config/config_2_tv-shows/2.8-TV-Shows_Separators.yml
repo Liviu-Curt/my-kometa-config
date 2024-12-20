@@ -5,6 +5,7 @@ templates:
   Separator:
     smart_label: random
     sync_mode: sync
+    collection_mode: hide
     plex_search:
       all:
         title: breaking bad
@@ -47,11 +48,11 @@ collections:
     summary: Network collections up next.
     file_poster: config/posters/Network Collections.png
 
-  Rating Collections:
-    template: { name: Separator }
-    sort_title: zzzzzzzz_11
-    summary: Rating collections up next.
-    file_poster: config/posters/Rating Collections.png
+  # Rating Collections:
+  #   template: { name: Separator }
+  #   sort_title: zzzzzzzz_11
+  #   summary: Rating collections up next.
+  #   file_poster: config/posters/Rating Collections.png
 
   Special Collections:
     template: { name: Separator }

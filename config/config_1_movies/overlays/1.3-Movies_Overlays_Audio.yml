@@ -11,7 +11,7 @@ templates:
       file_poster: config/overlays/Romanian-Audio.png
 
 overlays:
-  No-Swedish-Subtitles:
+  Romanian-Audio:
     template:
       - name: Romanian Audio
     plex_search:

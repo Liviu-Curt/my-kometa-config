@@ -8,16 +8,19 @@ templates:
     sync_mode: sync
     sort_title: +++_<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
   TV Release:
     smart_label: release.desc
     sync_mode: sync
     sort_title: +++_<<collection_name>>
     visible_library: true
+    collection_mode: hide
 
   TV Top:
     sync_mode: sync
     visible_library: true
+    # collection_mode: hide
 
 collections:
   IMDb - Best Recent: # IMDb specific chart lists

@@ -10,6 +10,7 @@ templates:
       sort_by: release.desc
     sort_title: zzzzz_<<collection_name>>
     sync_mode: sync
+    collection_mode: hide
 
   Studio:
     optional:
@@ -18,12 +19,14 @@ templates:
     sort_title: zzzzz_<<collection_name>>
     sync_mode: sync
     smart_label: release.desc
+    collection_mode: hide
 
   Streaming:
     sort_title: ++++_<<collection_name>>
     sync_mode: sync
     smart_label: originally_available.desc
     visible_library: true
+    collection_mode: hide
 
 # Fetched from TMDb using the studio id and/or name
 collections:
