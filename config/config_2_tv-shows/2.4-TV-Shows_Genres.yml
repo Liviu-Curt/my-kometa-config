@@ -1,5 +1,5 @@
 ############################################
-#               GENRES 15.0                #
+#               GENRES 16.5                #
 ############################################
 
 templates:
@@ -306,7 +306,7 @@ collections:
     file_poster: config/posters/Alien TV.png
     visible_shared: weekly(monday)
     trakt_list:
-      - https://trakt.tv/users/nero/lists/my-alien-and-space-collection?sort=rank,asc
+      - https://trakt.tv/users/captaincarrot/lists/space-tv-shows-non-animated?sort=rank,asc
       - https://trakt.tv/users/angel1online/lists/tv-14a-tv-aliens?sort=my_rating,asc
 
   Anthology:
@@ -340,7 +340,6 @@ collections:
     trakt_list:
       - https://trakt.tv/users/guy1307/lists/detective-uk
       - https://trakt.tv/users/woodrowsocialmedia-gmail-com/lists/tv-british-police-procedurals?sort=rank,asc
-      - https://trakt.tv/users/rudiecantfail/lists/uk-detective-crime-series
 
   Classic:
     template: { name: Genre Other }
@@ -348,8 +347,8 @@ collections:
     file_poster: config/posters/Classic TV.png
     visible_shared: monthly(5)
     trakt_list:
-      - https://trakt.tv/users/trackme666/lists/classic-tv?sort=title,asc
-      - https://trakt.tv/users/blankrandom/lists/classic-tv?sort=rank,asc
+      - https://trakt.tv/users/joepescisballs/lists/classic-shows?sort=title,asc
+      - https://trakt.tv/users/cheezzhead/lists/tv-shows-evergreen-classics?sort=rank,asc
 
   Comic Book:
     template: { name: Genre Other }
@@ -364,7 +363,7 @@ collections:
     file_poster: config/posters/Courtroom TV.png
     visible_shared: monthly(7)
     trakt_list:
-      - https://trakt.tv/users/galence/lists/lawyers-tv-show?sort=rank,asc
+      - https://trakt.tv/users/iwatchalotofshows/lists/law-and-lawyers?sort=released,asc
       - https://trakt.tv/users/psychonoob/lists/courtroom-drama-tv-shows?sort=rank,asc
 
   Dark Comedy:
@@ -489,7 +488,6 @@ collections:
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/period-dramas-tv?sort=rank,asc
       - https://trakt.tv/users/yuzuchan/lists/period-pieces?sort=rank,asc
-      - https://trakt.tv/users/shamooga/lists/period-pieces?sort=rank,asc
       - https://trakt.tv/users/jhsizemore/lists/period-pieces?sort=percentage,asc
       - https://trakt.tv/users/alimcc62/lists/period-pieces?sort=rank,asc
 
@@ -574,7 +572,7 @@ collections:
     visible_shared: weekly(friday)
     trakt_list:
       - https://trakt.tv/users/norman05/lists/sitcoms?sort=title,asc
-      - https://trakt.tv/users/omar-comin/lists/sitcoms?sort=title,asc
+      - https://trakt.tv/users/jhall-316-hotmail-com/lists/sitcoms?sort=rank,asc
       - https://trakt.tv/users/caira34/lists/sitcoms?sort=title,asc
   Spy:
     template: { name: Genre Other }
@@ -610,9 +608,9 @@ collections:
     file_poster: config/posters/Vampire TV.png
     visible_shared: monthly(25)
     trakt_list:
-      - https://trakt.tv/users/kali2002/lists/vampire?sort=title,asc
       - https://trakt.tv/users/padawan_seneca/lists/vampires-tv-series?sort=rank,asc
       - https://trakt.tv/users/racketpoint6789/lists/english-vampire-tv-shows?sort=rank,asc
+      - https://trakt.tv/users/angel1online/lists/tv-19a-tv-vampires?sort=my_rating,asc
 
   Video Game:
     template: { name: Genre Other }

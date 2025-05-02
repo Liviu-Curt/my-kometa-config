@@ -313,6 +313,15 @@ collections:
       all:
         actor: Daniel Radcliffe
 
+  Dustin Hoffman:
+    template: { name: Actor }
+    file_poster: config/posters/Dustin Hoffman.png
+    visible_shared:
+      - monthly(20)
+    plex_search:
+      all:
+        actor: Dustin Hoffman
+
   Elijah Wood:
     template: { name: Actor }
     file_poster: config/posters/Elijah Wood.jpg
@@ -806,6 +815,14 @@ collections:
       all:
         actor: Patrick Stewart
 
+  Ralph Fiennes:
+    template: { name: Actor }
+    file_poster: config/posters/Ralph Fiennes.png
+    visible_shared: range(09/12-09/15)
+    plex_search:
+      all:
+        actor: Ralph Fiennes
+
   Robert Pattinson:
     template: { name: Actor }
     file_poster: config/posters/Robert Pattinson.jpg
@@ -948,6 +965,15 @@ collections:
     plex_search:
       all:
         actor: Steve Carell
+
+  Steve McQueen:
+    template: { name: Actor }
+    file_poster: config/posters/Steve McQueen.png
+    visible_shared:
+      - monthly(23)
+    plex_search:
+      all:
+        actor: Steve McQueen
 
   Sylvester Stallone:
     template: { name: Actor }
@@ -1471,5 +1497,5 @@ collections:
     file_poster: config/posters/Stephen King.png
     trakt_list:
       - https://trakt.tv/users/sketche1/lists/stephen-king?sort=popularity,asc
-      - https://trakt.tv/users/missluna/lists/stephen-king?sort=rank,asc
+      - https://trakt.tv/users/hawque/lists/stephen-king?sort=released,asc
       - https://trakt.tv/users/drakula1000/lists/stephen-king?sort=rank,asc

@@ -22,18 +22,18 @@ collections:
       - https://trakt.tv/users/k0meta/lists/christmas-extravaganza-non-tv-movie
       - https://trakt.tv/users/movistapp/lists/christmas-movies
       - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
-      - https://trakt.tv/users/littlestella3/lists/christmas
 
   Easter 🐣:
     template: { name: Holiday }
-    visible_home: range(03/31-04/15)
-    visible_shared: range(03/31-04/15)
+    visible_home: range(03/22-04/20)
+    visible_shared: range(03/22-04/20)
     summary: The Easter bunny is here!
     file_poster: config/posters/Easter.png
     trakt_list:
       - https://trakt.tv/users/smwixted/lists/easter?sort=votes,asc
-      - https://trakt.tv/users/tarzanislav/lists/easter?sort=added,asc
-
+      - https://trakt.tv/users/galacticboy/lists/easter-movies?sort=rank,asc
+      - https://trakt.tv/users/brandnu76/lists/easter-movies-shows?sort=votes,asc
+      
   Fathers Day 👨‍👦:
     template: { name: Holiday }
     visible_home: range(11/08-11/14)
@@ -42,7 +42,7 @@ collections:
     file_poster: config/posters/Fathers Day.png
     trakt_list:
       - https://trakt.tv/users/fcisco13/lists/dad-movies?sort=rank,asc
-      - https://trakt.tv/users/segfaulted/lists/movies-for-dad?sort=rank,asc
+      - https://trakt.tv/users/marko8426/lists/dad-s-best-action-movies?sort=rank,asc
 
   Halloween 👻:
     template: { name: Holiday }
@@ -54,7 +54,6 @@ collections:
       - https://trakt.tv/users/29zombies/lists/halloween
       - https://trakt.tv/users/membball84/lists/halloween-halloween-halloween?sort=title,asc
       - https://trakt.tv/users/kairbear08/lists/halloween
-      - https://trakt.tv/users/mybicycle/lists/halloween
 
   Mothers Day 👩‍👧:
     template: { name: Holiday }
